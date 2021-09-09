@@ -11,6 +11,8 @@ export default class AddMovieForm extends Component {
 
   @tracked title;
 
+  @tracked rating;
+
   @tracked errorMessage;
 
   @action async addMovie(event) {
@@ -19,13 +21,14 @@ export default class AddMovieForm extends Component {
     this.errorMessage = undefined;
 
     try {
-      const { description, title } = this;
+      const { description, title, rating } = this;
       const db = getFirestore();
 
-      await addDoc(collection(db, 'movies'), { description, title });
+      await addDoc(collection(db, 'movies'), { description, title, rating });
 
       this.description = undefined;
       this.title = undefined;
+      this.rating = undefined;
 
       this.args.loadMovies();
     } catch (error) {
