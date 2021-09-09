@@ -19,10 +19,10 @@ export default class AddMovieForm extends Component {
     this.errorMessage = undefined;
 
     try {
-      const { descriptionx, title } = this;
+      const { description, title } = this;
       const db = getFirestore();
 
-      await addDoc(collection(db, 'movies'), { descriptionx, title });
+      await addDoc(collection(db, 'movies'), { description, title });
 
       this.description = undefined;
       this.title = undefined;
