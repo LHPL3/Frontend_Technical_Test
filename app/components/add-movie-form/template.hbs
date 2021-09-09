@@ -6,6 +6,7 @@
       @value={{this.title}}
       class='form-title'
       placeholder='Title..'
+      required={{true}}
     />
   </label>
 
@@ -16,6 +17,17 @@
       @value={{this.description}}
       class='form-description'
       placeholder='Description..'
+      required={{true}}
+    />
+  </label>
+
+  <label>
+    Rating
+    <Input
+      @type='number'
+      @value={{this.rating}}
+      class='form-rating'
+      placeholder='Rating..'
       required={{true}}
     />
   </label>
