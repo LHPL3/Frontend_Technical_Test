@@ -32,7 +32,7 @@ export default class AddMovieForm extends Component {
 
       this.args.loadMovies();
     } catch (error) {
-      this.errorMessage = error?.message;
+      this.errorMessage = error.message;
     }
   }
 }
