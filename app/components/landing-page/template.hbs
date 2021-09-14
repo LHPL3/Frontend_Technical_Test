@@ -1,8 +1,9 @@
 <div class={{this.styleNamespace}}>
   <MovieListHeader />
 
-<button class='sort-asc' type="button" {{on 'click' this.sortMovies}}>Sort By Rating - Ascending</button>
-<button class='sort-desc' type="button" {{on 'click' this.sortMovies}}>Sort By Rating - Descending</button>
+  <p>Sort Movies by Rating:</p>
+  <button class='sort-asc' type="button" {{on 'click' this.sortMovies}}>Ascending</button>
+  <button class='sort-desc' type="button" {{on 'click' this.sortMovies}}>Descending</button>
 
   <MovieList @movies={{this.movies}} />
 
