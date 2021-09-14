@@ -1,5 +1,5 @@
 <form class={{this.styleNamespace}} {{on 'submit' this.addMovie}}>
-  <label>
+  <label id='form-title'>
     Title
     <Input
       @type='text'
@@ -10,7 +10,7 @@
     />
   </label>
 
-  <label>
+  <label id='form-description'>
     Description
     <Input
       @type='text'
@@ -21,7 +21,7 @@
     />
   </label>
 
-  <label>
+  <label id='form-rating'>
     Rating
     <Input
       @type='number'
