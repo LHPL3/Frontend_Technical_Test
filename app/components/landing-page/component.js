@@ -42,7 +42,7 @@ export default class LandingPage extends Component {
 
     this.movies = movies;
 
-    if (event.srcElement.innerText === 'Sort By Rating - Descending') {
+    if (event.srcElement.innerText === 'Descending') {
       this.movies.sort((a, b) => b.data().rating - a.data().rating);
     } else {
       this.movies.sort((a, b) => a.data().rating - b.data().rating);
