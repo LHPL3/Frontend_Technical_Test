@@ -1,5 +1,27 @@
 & {
-  .details > h2 {
+  h2 {
     color: #e91c50;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .movie-list-buttons {
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    border: 10rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #e91c50;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: lighten(#e91c50, 5%);
+      text-decoration: underline;
+    }
+
+    &:active {
+      background-color: darken(#e91c50, 10%);
+    }
   }
 }
