@@ -1,28 +1,28 @@
 <li class={{this.styleNamespace}} >
   <div class='details'>
     <h2>
-      {{this.movie.title}}
-      <button type='button' id='title' {{on 'click' this.editMovie}}>
+      {{this.movie.title}} -
+      <button type='button' class='movie-list-buttons' id='title' {{on 'click' this.editMovie}}>
         Edit
       </button>
     </h2>
 
     <p>
-      {{this.movie.description}}
-      <button type='button' id='description' {{on 'click' this.editMovie}}>
+      {{this.movie.description}} -
+      <button type='button' class='movie-list-buttons' id='description' {{on 'click' this.editMovie}}>
         Edit
       </button>
     </p>
 
     <p>
-      {{this.movie.rating}} / 5
-      <button type='button' id='rating' {{on 'click' this.editMovie}}>
-        Edit
+      {{this.movie.rating}} / 5 -
+      <button type='button' class='movie-list-buttons' id='rating' {{on 'click' this.editMovie}}>
+       Edit
       </button>
     </p>
         
-    <button type="button" {{on 'click' this.deleteMovie}}>
-      Delete
+    <button type="button" class='movie-list-buttons'  {{on 'click' this.deleteMovie}}>
+     Delete
     </button>
 
   </div>
